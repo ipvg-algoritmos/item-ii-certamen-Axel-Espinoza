@@ -11,3 +11,13 @@
 # 3. Muestra si es o no un palíndromo con un mensaje claro.
 
 # 👇 Aquí comienza tu código
+def es_palindromo(texto):
+    texto = texto.lower()
+    texto = ''.join(texto.split())
+    
+    if texto == texto[::-1]:
+        return True
+    else:
+        return False
+    
+print (es_palindromo("anana"))
